@@ -1,0 +1,13 @@
+[package]
+name = "gitstatus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# No external dependencies - uses only std library
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
